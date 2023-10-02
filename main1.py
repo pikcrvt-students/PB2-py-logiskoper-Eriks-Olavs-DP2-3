@@ -10,9 +10,11 @@ def parb(x):
     """
 
 
-x = int(input('x:'))
+    x = float(input('x:'))
 
-if x > 10 and x < 50:
-    print('True')
-else:
-    print('False')
+    if x > 10 and x < 50:
+        print('Ir intervala')
+    else:
+        print('Nav intervala')
+
+doctest.testmod(verbose=True)
