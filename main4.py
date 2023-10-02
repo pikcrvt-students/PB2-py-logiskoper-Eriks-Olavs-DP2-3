@@ -1,7 +1,7 @@
 import doctest
 def parbaudit_koord(koord_x:float) -> bool:
     """
-    Funkcijas parbaude x koordinati. xt(3.9; +inf)
+    Funkcijas parbaude x koordinati.
     >>> parbaudit_koord(1.3)
     False
     >>> parbaudit_koord(3.9)
@@ -14,7 +14,6 @@ def parbaudit_koord(koord_x:float) -> bool:
         return True
     else:
         return False
-
 doctest.testmod(verbose=True)
 
 
