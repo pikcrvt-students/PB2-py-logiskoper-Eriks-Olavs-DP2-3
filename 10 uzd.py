@@ -1,15 +1,9 @@
-"""
-Programma pārbauda punkta koordinates figurai, riņkim, riņķa centrs atrodas punkta 0,0, riņka radius 1 vieniba
-"""
+
 import doctest
 
 from math import sqrt
 def parbauditPunktaKoordinatas(x:float, y:float) -> int:
     """
-    >>> parbauditPunktaKoordinatas(1, )
-    3
-    >>> parbauditPunktaKoordinatas(1, )
-    3
     >>> parbauditPunktaKoordinatas(0,1)
     2
     >>> parbauditPunktaKoordinatas(-1,0)
@@ -20,19 +14,13 @@ def parbauditPunktaKoordinatas(x:float, y:float) -> int:
     2
     >>> parbauditPunktaKoordinatas(0.5, 0.4)
     1
-    >>> parbauditPunktaKoordinatas( )
-    1
     >>> parbauditPunktaKoordinatas(0,0)
     1
-    >>> parbauditPunktaKoordinatas()
-    3
-    >>> parbauditPunktaKoordinatas(0.7, ?)
-    2
     """
     from math import sqrt
-    if round(sqrt(x ** 2 + y ** 2), 1) <= 1:  # Pārbauda vai punkts atrodas figūras iekšā vai uz robežlīnijas.
+    if round(sqrt(x ** 2 + y ** 2), 1) <= 1:
 
-        if round(sqrt(x ** 2 + y ** 2), 1) == 1:  # Pārbauda vai atrodas tieši uz robežlīnijas.
+        if round(sqrt(x ** 2 + y ** 2), 1) == 1:
             return 2
         else:
             return 1
